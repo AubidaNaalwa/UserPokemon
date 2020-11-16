@@ -33,7 +33,8 @@ const Model = () => {
 
         const result =  $.ajax({
             method: 'get',
-            url:`https://api.kanye.rest/`,
+            url:`
+            `,
             async: false
            
         });
@@ -51,7 +52,7 @@ const Model = () => {
         });
         const result = JSON.parse(pasrse["responseText"])
         data["pokemonName"] = result["name"]     
-        data["imgUrl"] =  result["sprites"]["front_default"]
+        data["imgUrl"] =  result["sprites"]["other"]["dream_world"]["front_default"]
 
     }
 
