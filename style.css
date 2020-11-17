@@ -1,0 +1,84 @@
+body{
+    
+    background-image: url('b4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: aliceblue;
+    
+}
+
+#personalLogo{
+    size: 20px;
+    height: 100%;
+    justify-self: end;
+}
+
+
+#container{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10rem;
+  grid-template-areas: 
+  "h h h h h" 
+  "q q q q f" 
+  "q q q q f"
+  "a a a a f"
+  "b b b b f";
+}
+
+#head{
+    height: 100%;
+    width: 100%;
+    grid-area: h;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100px;
+}
+
+#userContainer{
+    height: 100%;
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-areas: "i n n n n" "i l l l l";
+}
+
+#picture{
+grid-area: i;
+justify-self: left;
+}
+#name{
+    grid-area: n;
+    justify-self: left;
+}
+#location{
+    grid-area: l;
+    justify-self: left;
+}
+
+#qoutes{
+    height: 100%;
+    width: 100%;
+    grid-area: q;
+    display: grid;
+
+}
+
+#aboutMe{
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+}
+
+#friends{
+    height: 100%;
+    width: 100%;
+    grid-area: f;
+}
+
+#btns{
+    height: 100%;
+    width: 100%;
+    grid-area: b;
+}
